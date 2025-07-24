@@ -12,6 +12,7 @@
 #define U_MEDIA 7
 #define U_NUM 8
 #define U_SYM 9
+#define U_FUN 9
 
 #endif
 
