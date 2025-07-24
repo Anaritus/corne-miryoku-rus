@@ -17,7 +17,7 @@ enum tap_dance_codes {
   DANCE_1,
 };
 
-#define DUAL_FUNC_0 LT(9, KC_S)
+#define DUAL_FUNC_0 LT(8, KC_F24)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_voyager(
@@ -52,14 +52,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO,          KC_Q,           KC_W,           KC_F,           KC_P,           KC_B,                                           KC_J,           KC_L,           KC_U,           KC_Y,           KC_QUOTE,       TD(DANCE_1),    
     KC_NO,          MT(MOD_LGUI, KC_A),MT(MOD_RALT, KC_R),MT(MOD_LCTL, KC_S),MT(MOD_LSFT, KC_T),KC_G,                                           KC_M,           MT(MOD_RSFT, KC_N),MT(MOD_RCTL, KC_E),MT(MOD_RALT, KC_I),MT(MOD_RGUI, KC_O),KC_NO,          
     KC_NO,          KC_Z,           KC_X,           KC_C,           KC_D,           KC_V,                                           KC_K,           KC_H,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_NO,          
-    KC_NO,          KC_NO,          KC_NO,          KC_F13,         LT(7, KC_ESCAPE),LT(5, KC_SPACE),                                LT(8, KC_BSPC), LT(10, KC_DELETE),TT(5),          KC_NO,          KC_NO,          KC_NO,          
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          LT(7, KC_ESCAPE),LT(5, KC_SPACE),                                LT(8, KC_BSPC), LT(10, KC_DELETE),KC_NO,          KC_NO,          KC_NO,          KC_NO,          
                                                     LT(6, KC_TAB),  KC_NO,                                          KC_NO,          LT(9, KC_ENTER)
   ),
   [5] = LAYOUT_voyager(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          LGUI(LSFT(KC_Z)),KC_MAC_PASTE,   KC_MAC_COPY,    KC_MAC_CUT,     KC_MAC_UNDO,    KC_NO,          
     KC_NO,          KC_LEFT_GUI,    KC_RIGHT_ALT,   KC_LEFT_CTRL,   KC_LEFT_SHIFT,  KC_NO,                                          KC_CAPS,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_NO,          
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          QK_LLCK,        KC_NO,                                          CW_TOGG,        KC_HOME,        KC_PGDN,        KC_PAGE_UP,     KC_END,         KC_NO,          
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          KC_BSPC,        KC_DELETE,      KC_TRANSPARENT, KC_NO,          KC_NO,          KC_NO,          
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRANSPARENT,                                 KC_BSPC,        KC_DELETE,      KC_TRANSPARENT, KC_NO,          KC_NO,          KC_NO,          
                                                     KC_NO,          KC_NO,                                          KC_TRANSPARENT, KC_ENTER
   ),
   [6] = LAYOUT_voyager(
@@ -114,6 +114,11 @@ const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM = LAYOUT(
   '*', '*', '*', '*'
 );
 
+const uint16_t PROGMEM combo0[] = { KC_DOT, KC_COMMA, COMBO_END};
+
+combo_t key_combos[COMBO_COUNT] = {
+    COMBO(combo0, RU_SCLN),
+};
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
