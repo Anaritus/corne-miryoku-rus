@@ -231,7 +231,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         } else {
           layer_move(QMK_LAYER_BASE);
         }
-        SEND_STRING(KC_F13);
+        tap_code(KC_F13);
       }
       return false;
     case DUAL_FUNC_0:
