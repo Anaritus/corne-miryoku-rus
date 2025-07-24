@@ -1,9 +1,8 @@
 #define FLOW_TAP_TERM 100
 #define CHORDAL_HOLD
 #define USB_SUSPEND_WAKEUP_DELAY 0
-#define SERIAL_NUMBER "7ynGw/lbzYge"
+#define SERIAL_NUMBER "7ynGw/nljz5D"
 #define LAYER_STATE_16BIT
-#define COMBO_COUNT 1
 
 #define TAPPING_TERM_PER_KEY
 #define RGB_MATRIX_STARTUP_SPD 60
