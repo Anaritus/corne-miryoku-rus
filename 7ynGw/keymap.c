@@ -151,7 +151,7 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(thumbcombos_fun, KC_APP),
     COMBO(cmb_to_rus, TOGGLE_LANG_COMBO),
     COMBO(cmb_to_eng, TOGGLE_LANG_COMBO),
-    COMBO(corne_thumbcombos_left, KC_CMD),
+    COMBO(corne_thumbcombos_left, KC_RGUI),
     COMBO(corne_thumbcombos_right, MT(KC_RIGHT_ALT, KC_F13)),
 };
 
