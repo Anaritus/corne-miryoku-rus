@@ -138,7 +138,7 @@ const uint16_t PROGMEM thumbcombos_sym[] = {KC_RPRN, KC_UNDS, COMBO_END};
 const uint16_t PROGMEM thumbcombos_fun[] = {KC_SPC, KC_TAB, COMBO_END};
 
 const uint16_t PROGMEM corne_thumbcombos_left[] = {MO(3), MEH_T(KC_SPACE), COMBO_END};
-const uint16_t PROGMEM corne_thumbcombos_left[] = {KC_ENTER, MO(2), COMBO_END};
+const uint16_t PROGMEM corne_thumbcombos_right[] = {KC_ENTER, MO(2), COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(thumbcombos_base_right, LT(U_FUN, KC_DEL)),
