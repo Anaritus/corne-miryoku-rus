@@ -121,9 +121,11 @@ const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM = LAYOUT(
 );
 
 const uint16_t PROGMEM combo0[] = { KC_SPACE, KC_ESCAPE, COMBO_END};
+const uint16_t PROGMEM combo1[] = { KC_G, KC_H, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo0, KC_TAB),
+    COMBO(combo1, KC_F13),
 };
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
