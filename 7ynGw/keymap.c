@@ -261,21 +261,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         tap_code(KC_F13);
       }
       return false;
-    case DUAL_FUNC_0:
-      if (record->tap.count > 0) {
-        if (record->event.pressed) {
-          register_code16(KC_LEFT_GUI);
-        } else {
-          unregister_code16(KC_LEFT_GUI);
-        }
-      } else {
-        if (record->event.pressed) {
-          layer_on(1);
-        } else {
-          layer_off(1);
-        }
-      }
-      return false;
     case RGB_SLD:
       if (record->event.pressed) {
         rgblight_mode(1);
