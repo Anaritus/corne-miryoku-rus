@@ -137,7 +137,7 @@ const uint16_t PROGMEM thumbcombos_num[] = {KC_0, KC_MINS, COMBO_END};
 const uint16_t PROGMEM thumbcombos_sym[] = {KC_RPRN, KC_UNDS, COMBO_END};
 const uint16_t PROGMEM thumbcombos_fun[] = {KC_SPC, KC_TAB, COMBO_END};
 
-const uint16_t PROGMEM corne_thumbcombos_left[] = {MO(3), MEH_T(KC_SPACE), COMBO_END};
+const uint16_t PROGMEM corne_thumbcombos_left[] = {MO(1), MEH_T(KC_SPACE), COMBO_END};
 const uint16_t PROGMEM corne_thumbcombos_right[] = {KC_ENTER, MO(2), COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
@@ -152,7 +152,7 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(cmb_to_rus, TOGGLE_LANG_COMBO),
     COMBO(cmb_to_eng, TOGGLE_LANG_COMBO),
     COMBO(corne_thumbcombos_left, KC_RGUI),
-    COMBO(corne_thumbcombos_right, MT(KC_RIGHT_ALT, KC_F13)),
+    COMBO(corne_thumbcombos_right, MT(MOD_RALT, KC_F13)),
 };
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
