@@ -132,7 +132,7 @@ const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM = LAYOUT(
 );
 
 const uint16_t PROGMEM combo0[] = { KC_SPACE, KC_ESCAPE, COMBO_END};
-const uint16_t PROGMEM combo1[] = { KC_U, KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM combo1[] = { KC_7, KC_8, KC_9, COMBO_END};
 
 const uint16_t PROGMEM cmb_to_rus[] = { KC_L, KC_U, KC_Y, COMBO_END };
 const uint16_t PROGMEM cmb_to_eng[] = { RU_GHE, RU_SHA, RU_SHCH, COMBO_END };
