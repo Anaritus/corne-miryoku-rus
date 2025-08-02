@@ -5,14 +5,14 @@
 #ifndef ZSA_SAFE_RANGE
 #define ZSA_SAFE_RANGE SAFE_RANGE
 #define QMK_LAYER_BASE 4
-#define QMK_LAYER_RUS 11
+#define QMK_LAYER_RUS 5
 
-#define U_NAV 5
-#define U_MOUSE 6
-#define U_MEDIA 7
-#define U_NUM 8
-#define U_SYM 9
-#define U_FUN 10
+#define U_NAV 6
+#define U_MOUSE 7
+#define U_MEDIA 8
+#define U_NUM 9
+#define U_SYM 10
+#define U_FUN 11
 
 #endif
 
