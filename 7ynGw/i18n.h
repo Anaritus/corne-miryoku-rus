@@ -23,6 +23,7 @@
 #define RU_SHA KC_I
 #define RU_SHCH KC_O
 #define RU_ZE KC_P
+#define RU_HA KC_LBRC
 #define RU_ER KC_H
 #define RU_O KC_J
 #define RU_EL KC_K
@@ -33,5 +34,7 @@
 #define RU_SOFT KC_M
 #define RU_BE KC_COMM
 #define RU_YU KC_DOT
-#define RU_HA KC_LBRC
-#define RU_HARD KC_RBRC
+#define KC_MAC_PASTE LGUI(KC_V)
+#define KC_MAC_COPY LGUI(KC_C)
+#define KC_MAC_CUT LGUI(KC_X)
+#define KC_MAC_UNDO LGUI(KC_Z)
