@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRANSPARENT,                                 KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_HYPR,        KC_NO,                                          LGUI(LSFT(KC_Z)),KC_MAC_PASTE,   KC_MAC_COPY,    KC_MAC_CUT,     KC_MAC_UNDO,    KC_NO,          
     KC_NO,          KC_LEFT_GUI,    KC_LEFT_CTRL,   KC_LEFT_SHIFT,  KC_RIGHT_ALT,   KC_MEH,                                         KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_CAPS,        KC_NO,          
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          QK_LLCK,        KC_TRANSPARENT,                                 CW_TOGG,        KC_HOME,        KC_PGDN,        KC_PAGE_UP,     KC_END,         KC_NO,          
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          QK_LLCK,        KC_TRANSPARENT,                                 KC_HOME,        KC_PGDN,        KC_PAGE_UP,     KC_END,         CW_TOGG,        KC_NO,          
                                                     KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_ENTER,       KC_BSPC
   ),
   [6] = LAYOUT_voyager(
@@ -70,9 +70,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [7] = LAYOUT_voyager(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_HYPR,        KC_NO,                                          RGB_TOG,        RGB_MODE_FORWARD,RGB_HUI,        RGB_SAI,        RGB_VAI,        KC_NO,          
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_HYPR,        KC_NO,                                          RGB_SPI,        RGB_VAI,        RGB_HUI,        RGB_SAI,        RGB_MODE_FORWARD,KC_NO,          
     KC_NO,          KC_LEFT_GUI,    KC_LEFT_CTRL,   KC_LEFT_SHIFT,  KC_RIGHT_ALT,   KC_MEH,                                         KC_MEDIA_PREV_TRACK,KC_AUDIO_VOL_DOWN,KC_AUDIO_VOL_UP,KC_MEDIA_NEXT_TRACK,KC_NO,          KC_NO,          
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          QK_LLCK,        KC_NO,                                          RGB_SPD,        RGB_SPI,        RGB_HUD,        RGB_SAD,        RGB_VAD,        KC_NO,          
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          QK_LLCK,        KC_NO,                                          RGB_SPD,        RGB_VAD,        RGB_HUD,        RGB_SAD,        RGB_TOG,        KC_NO,          
                                                     KC_NO,          KC_NO,                                          KC_MEDIA_STOP,  KC_MEDIA_PLAY_PAUSE
   ),
   [8] = LAYOUT_voyager(
