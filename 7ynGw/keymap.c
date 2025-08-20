@@ -238,17 +238,6 @@ bool rgb_matrix_indicators_user(void) {
 }
 
 
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  switch (keycode) {
-
-    case RGB_SLD:
-      if (record->event.pressed) {
-        rgblight_mode(1);
-      }
-      return false;
-  }
-  return true;
-}
 
 typedef struct {
     bool is_press_action;
@@ -318,3 +307,15 @@ tap_dance_action_t tap_dance_actions[] = {
         [DANCE_0] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_0_finished, dance_0_reset),
         [DANCE_1] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_1_finished, dance_1_reset),
 };
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  switch (keycode) {
+
+    case RGB_SLD:
+      if (record->event.pressed) {
+        rgblight_mode(1);
+      }
+      return false;
+  }
+  return true;
+}
