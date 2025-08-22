@@ -1,8 +1,10 @@
 #define CHORDAL_HOLD
+#define PERMISSIVE_HOLD
+
 #define QUICK_TAP_TERM 0
 
 #define USB_SUSPEND_WAKEUP_DELAY 0
-#define SERIAL_NUMBER "7ynGw/ZPD6lv"
+#define SERIAL_NUMBER "7ynGw/aNPvWb"
 #define LAYER_STATE_16BIT
 #define COMBO_COUNT 14
 
